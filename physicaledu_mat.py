@@ -95,7 +95,6 @@ if __name__ == '__main__':
         hw = 0.68
         hline = h * hw
         cv2.line(img, (0, int(hline)), (w, int(hline)), (0, 0, 255), thickness=3, lineType=cv2.LINE_4)
-        cv2.line(image, (0, int(hline)), (w, int(hline)), (0, 0, 255), thickness=3, lineType=cv2.LINE_4)
         
         person_pose_array, _ = pose_detector(img)
         if(count == 0):
